@@ -1,14 +1,71 @@
 body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
+    margin: 0; 
 }
 
 main {
-    flex: 1; /* Le contenu principal occupe l’espace disponible */
+    flex: 1; 
 }
 
+
 footer {
-    position: relative; /* Le footer n'est pas fixe, il suit le flux normal */
+    background-color: #212529; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
 }
+
+.neumorphic-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+.neumorphic-input {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+.neumorphic-input:focus {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7), 0 0 5px #00bcd4;
+}
+
+.neumorphic-btn {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-btn:hover {
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1), inset -8px -8px 16px rgba(255, 255, 255, 0.7);
+}
+
+.neumorphic-btn:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.form-label {
+    color: #333;
+}
+
+
+
+
